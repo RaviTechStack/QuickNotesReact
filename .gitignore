@@ -1,0 +1,9 @@
+node_modules/
+__pycache__/
+build/
+
+tailwind.config.js
+postcss.config.js
+purgecss.js
+
+.vscode/
