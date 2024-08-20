@@ -2,7 +2,7 @@ const NotesReducer =(state, action) =>{
     switch (action.type) {
         case "Put_data":
             const allData = action.payload.results
-            const totalpage = Math.ceil(action.payload.count)
+            const totalpage = Math.ceil(action.payload.count / 6)
             return{
                 ...state,"isloading":false, "AllNotes" : allData, "FilterNotes" : allData, "total_page": totalpage
             };
